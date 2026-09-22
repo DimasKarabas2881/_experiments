@@ -1,7 +1,7 @@
 # Last match in file takes precedence.
 
 # Ping for all PRs
-* @KillanGenifer
+# * @your-github-username
 
 # Locale
 #/Resources/Locale @
@@ -11,9 +11,9 @@
 #/Resources/Textures @
 
 # Map files
-/Resources/Prototypes/_CorvaxGoob/Entities/Stations @kvant8
-/Resources/Prototypes/_CorvaxGoob/Maps @kvant8
-/Resources/Maps/ @kvant8
+/Resources/Prototypes/_CorvaxGoob/Entities/Stations 
+/Resources/Prototypes/_CorvaxGoob/Maps 
+/Resources/Maps/ 
 
 # TTS
-/Content.*/_CorvaxGoob/TTS @Morb0
+/Content.*/_CorvaxGoob/TTS 

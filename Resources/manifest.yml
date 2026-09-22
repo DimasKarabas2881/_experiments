@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-defaultWindowTitle: Space Station 14 - Corvax Station [RU]
-windowIconSet: /Textures/Logo/icon-ru # Corvax-Theme
-splashLogo: /Textures/Logo/logo-ru.png # Corvax-Theme
-
-# PJB PLEASE
+defaultWindowTitle: Space Station 14 - Nexus
+windowIconSet: /Textures/Logo/icon-nexus
+splashLogo: /Textures/Logo/logo-nexus.png
+# NOTE: icon-nexus / logo-nexus.png ещё не существуют как ассеты — добавить спрайты в /Resources/Textures/Logo/, иначе клиент упадёт на загрузке манифеста.

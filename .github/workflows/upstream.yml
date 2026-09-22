@@ -1,8 +1,8 @@
-name: Weekly Upstream Pull
+name: Manual Upstream Pull
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'
+  # Автосинк с апстримом намеренно отключён: апдейты подтягиваем вручную,
+  # когда сами решаем, что и когда мержить (см. обсуждение по воркфлоу проекта).
   workflow_dispatch:
 
 jobs:
