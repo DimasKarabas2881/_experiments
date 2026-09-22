@@ -1,6 +1,6 @@
 <p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
 
-**Nexus** — экспериментальный core-билд на движке Space Station 14, форкнутый от [CorvaxGoob](https://github.com/DimasKarabas2881/_experiments) (который, в свою очередь, форк [Goob Station](https://github.com/Goob-Station/Goob-Station)). Служит основой для разработки и обкатки новых механик (медицина, физиология, интерфейсы), из которой впоследствии растут отдельные тематические билды.
+**Nexus** — экспериментальный core-билд на движке Space Station 14, форкнутый от [CorvaxGoob](https://github.com/DimasKarabas2881/_experiments) (который, в свою очередь, форк [Goob Station](https://github.com/Goob-Station/Goob-Station)). Служит основой для разработки и обкатки новых механик, из которой впоследствии растут отдельные тематические билды.
 
 ## Базовые репозитории
 
