@@ -1,0 +1,25 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\bin\Content.Server\</OutputPath>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
+  <Import Project="../MSBuild/Content.props" />
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
+  </ItemGroup>
+
+  <Import Project="..\RobustToolbox\Imports\Shared.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Content.Server\Content.Server.csproj" />
+    <ProjectReference Include="..\Content.Nexus.Shared\Content.Nexus.Shared.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
+</Project>

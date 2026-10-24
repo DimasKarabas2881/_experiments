@@ -51,6 +51,11 @@
   <Project Path="Content.Server/Content.Server.csproj" />
   <Project Path="Content.Shared.Database/Content.Shared.Database.csproj" />
   <Project Path="Content.Shared/Content.Shared.csproj" />
+  <!-- Nexus -->
+  <Project Path="Content.Nexus.Server/Content.Nexus.Server.csproj" />
+  <Project Path="Content.Nexus.Shared/Content.Nexus.Shared.csproj" />
+  <Project Path="Content.Nexus.Client/Content.Nexus.Client.csproj" />
+  <!-- /Nexus -->
   <!-- <Goob Start> -->
   <Project Path="Content.Goobstation.Server/Content.Goobstation.Server.csproj" />
   <Project Path="Content.Goobstation.Shared/Content.Goobstation.Shared.csproj" />

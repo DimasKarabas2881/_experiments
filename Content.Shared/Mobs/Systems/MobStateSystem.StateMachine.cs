@@ -112,6 +112,13 @@ public partial class MobStateSystem
         if (oldState == MobState.Dead && HasComp<DebrainedComponent>(target)) // Shitmed Change
             return;
 
+        // Nexus Change Start - let other systems veto a state change (brain death makes Dead permanent)
+        var attempt = new MobStateChangeAttemptEvent(target, component, oldState, newState, origin);
+        RaiseLocalEvent(target, ref attempt);
+        if (attempt.Cancelled)
+            return;
+        // Nexus Change End
+
         OnExitState(target, component, oldState);
         component.CurrentState = newState;
         OnEnterState(target, component, newState);
@@ -156,3 +163,20 @@ public partial class MobStateSystem
 [ByRefEvent]
 public record struct UpdateMobStateEvent(EntityUid Target, MobStateComponent Component, MobState State,
     EntityUid? Origin = null);
+
+// Nexus Change Start
+/// <summary>
+/// Raised on the entity before a MobState change is applied. Set <see cref="Cancelled"/> to veto the change.
+/// </summary>
+/// <param name="Target">The Entity whose MobState is changing</param>
+/// <param name="Component">The MobState Component owned by the Target</param>
+/// <param name="OldState">The current MobState</param>
+/// <param name="NewState">The MobState that is about to be applied</param>
+/// <param name="Origin">Entity that caused the state change (if applicable)</param>
+[ByRefEvent]
+public record struct MobStateChangeAttemptEvent(EntityUid Target, MobStateComponent Component, MobState OldState,
+    MobState NewState, EntityUid? Origin = null)
+{
+    public bool Cancelled;
+}
+// Nexus Change End

@@ -114,6 +114,11 @@ public sealed class CPRSystem : EntitySystem
             return;
         }
 
+        // Nexus Change Start
+        var cycleEv = new CPRCycleCompletedEvent(performer, args.Target.Value, performer.Comp.DoAfterDuration);
+        RaiseLocalEvent(args.Target.Value, ref cycleEv);
+        // Nexus Change End
+
         if (!performer.Comp.CPRHealing.Empty)
             _damageable.TryChangeDamage(args.Target, performer.Comp.CPRHealing, true, origin: performer, targetPart: TargetBodyPart.All); // Shitmed Change
 
