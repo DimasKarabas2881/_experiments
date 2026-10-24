@@ -3,4 +3,3 @@
 defaultWindowTitle: Space Station 14 - Nexus
 windowIconSet: /Textures/Logo/icon-nexus
 splashLogo: /Textures/Logo/logo-nexus.png
-# NOTE: icon-nexus / logo-nexus.png ещё не существуют как ассеты — добавить спрайты в /Resources/Textures/Logo/, иначе клиент упадёт на загрузке манифеста.
